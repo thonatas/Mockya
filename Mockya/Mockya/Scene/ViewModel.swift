@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Network
 
 protocol ViewModelDelegate: AnyObject {
     func didGetData(_ data: String)
