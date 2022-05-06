@@ -10,12 +10,12 @@
 		182596382825441200D34575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182596372825441200D34575 /* AppDelegate.swift */; };
 		1825963A2825441200D34575 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182596392825441200D34575 /* SceneDelegate.swift */; };
 		1825963C2825441200D34575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825963B2825441200D34575 /* ViewController.swift */; };
-		1825963F2825441200D34575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1825963D2825441200D34575 /* Main.storyboard */; };
 		182596412825441300D34575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182596402825441300D34575 /* Assets.xcassets */; };
 		182596442825441300D34575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182596422825441300D34575 /* LaunchScreen.storyboard */; };
 		1825964F2825441300D34575 /* MockyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825964E2825441300D34575 /* MockyaTests.swift */; };
 		182596592825441300D34575 /* MockyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182596582825441300D34575 /* MockyaUITests.swift */; };
 		1825965B2825441300D34575 /* MockyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825965A2825441300D34575 /* MockyaUITestsLaunchTests.swift */; };
+		1825966A282548BE00D34575 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18259669282548BE00D34575 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		182596372825441200D34575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		182596392825441200D34575 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1825963B2825441200D34575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1825963E2825441200D34575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		182596402825441300D34575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182596432825441300D34575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182596452825441300D34575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		182596542825441300D34575 /* MockyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182596582825441300D34575 /* MockyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockyaUITests.swift; sourceTree = "<group>"; };
 		1825965A2825441300D34575 /* MockyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18259669282548BE00D34575 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,9 @@
 		182596362825441200D34575 /* Mockya */ = {
 			isa = PBXGroup;
 			children = (
-				182596372825441200D34575 /* AppDelegate.swift */,
-				182596392825441200D34575 /* SceneDelegate.swift */,
-				1825963B2825441200D34575 /* ViewController.swift */,
-				1825963D2825441200D34575 /* Main.storyboard */,
+				18259667282546D400D34575 /* Common */,
+				18259668282546E700D34575 /* Scene */,
 				182596402825441300D34575 /* Assets.xcassets */,
-				182596422825441300D34575 /* LaunchScreen.storyboard */,
 				182596452825441300D34575 /* Info.plist */,
 			);
 			path = Mockya;
@@ -125,6 +122,25 @@
 				1825965A2825441300D34575 /* MockyaUITestsLaunchTests.swift */,
 			);
 			path = MockyaUITests;
+			sourceTree = "<group>";
+		};
+		18259667282546D400D34575 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				182596372825441200D34575 /* AppDelegate.swift */,
+				182596392825441200D34575 /* SceneDelegate.swift */,
+				182596422825441300D34575 /* LaunchScreen.storyboard */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18259668282546E700D34575 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1825963B2825441200D34575 /* ViewController.swift */,
+				18259669282548BE00D34575 /* ViewModel.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +249,6 @@
 			files = (
 				182596442825441300D34575 /* LaunchScreen.storyboard in Resources */,
 				182596412825441300D34575 /* Assets.xcassets in Resources */,
-				1825963F2825441200D34575 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +275,7 @@
 			files = (
 				1825963C2825441200D34575 /* ViewController.swift in Sources */,
 				182596382825441200D34575 /* AppDelegate.swift in Sources */,
+				1825966A282548BE00D34575 /* ViewModel.swift in Sources */,
 				1825963A2825441200D34575 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1825963D2825441200D34575 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1825963E2825441200D34575 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		182596422825441300D34575 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +450,6 @@
 				INFOPLIST_FILE = Mockya/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +477,6 @@
 				INFOPLIST_FILE = Mockya/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
