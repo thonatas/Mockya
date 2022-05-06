@@ -50,6 +50,7 @@
 		182596582825441300D34575 /* MockyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockyaUITests.swift; sourceTree = "<group>"; };
 		1825965A2825441300D34575 /* MockyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18259669282548BE00D34575 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1825966F2825509F00D34575 /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Network; path = ../Network; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		1825962B2825441200D34575 = {
 			isa = PBXGroup;
 			children = (
+				1825966F2825509F00D34575 /* Network */,
 				182596362825441200D34575 /* Mockya */,
 				1825964D2825441300D34575 /* MockyaTests */,
 				182596572825441300D34575 /* MockyaUITests */,
