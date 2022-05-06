@@ -16,6 +16,7 @@
 		182596592825441300D34575 /* MockyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182596582825441300D34575 /* MockyaUITests.swift */; };
 		1825965B2825441300D34575 /* MockyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825965A2825441300D34575 /* MockyaUITestsLaunchTests.swift */; };
 		1825966A282548BE00D34575 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18259669282548BE00D34575 /* ViewModel.swift */; };
+		1825966E2825505300D34575 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1825966D2825505300D34575 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1825966E2825505300D34575 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +161,9 @@
 			dependencies = (
 			);
 			name = Mockya;
+			packageProductDependencies = (
+				1825966D2825505300D34575 /* Moya */,
+			);
 			productName = Mockya;
 			productReference = 182596342825441200D34575 /* Mockya.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 1825962B2825441200D34575;
+			packageReferences = (
+				1825966C2825505300D34575 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 182596352825441200D34575 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -608,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1825966C2825505300D34575 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = exactVersion;
+				version = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1825966D2825505300D34575 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1825966C2825505300D34575 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1825962C2825441200D34575 /* Project object */;
 }
