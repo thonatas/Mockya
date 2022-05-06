@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     // MARK: - Views
     private let label: UILabel = {
         let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 17)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -40,11 +41,14 @@ class ViewController: UIViewController {
 // MARK: - Constraints
 private extension ViewController {
     func buildViewHierarchy() {
-        
+        view.addSubview(label)
     }
     
     func setupConstraints() {
-        
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        ])
     }
 }
 
